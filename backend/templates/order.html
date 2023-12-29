@@ -1,0 +1,12 @@
+<ul>
+  {% for item in items %}
+    <li>
+      <b> Наименование: </b> {{ item.item.name }}
+      <b> Количество: </b> {{ item.quantity }}
+    </li>
+  {% endfor %}
+</ul>
+<p>
+<a class="btn btn-primary" href="{% url 'items:buy_order' %}">
+  Оформить заказ
+</a>

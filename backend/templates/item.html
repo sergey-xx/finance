@@ -1,0 +1,6 @@
+<h1> {{ item.name }} </h1>
+Описание: {{ item.description }}
+<p>
+<a class="btn btn-primary" href="{% url 'items:buy_item' item_id=item.id %}">
+    Купить
+  </a>

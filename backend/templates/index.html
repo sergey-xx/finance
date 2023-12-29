@@ -1,0 +1,12 @@
+<ul>
+  {% for item in items %}
+    <li>
+      <b> Наименование: </b> {{ item.name }}
+      <b> Описание: </b> {{ item.description }}
+      <a class="btn btn-primary" href="{% url 'items:get_item' item_id=item.id %}">
+        Подробнее
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+<p>
